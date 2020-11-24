@@ -1,0 +1,30 @@
+Shopee
+
+Class = Flashsale
+
+Property
+- productname
+- sale price
+- %discount
+- urlpicture
+- # of sales
+
+
+Action
+- Add#ofsales(number)
+- ChangePic(url)
+- UpdateSaleprice(price) subtract or add in price
+
+
+----------------------------------------------------------
+
+Class = RecommendProduct
+
+Property
+- productName
+- price
+- numberOfSale
+
+Action
+- ChangeProductName(name)
+- UpdatePrice(price)
