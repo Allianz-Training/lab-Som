@@ -21,7 +21,7 @@ public class DiscountRate {
 			return serviceDiscountSilver;
 		}
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + memberType);
+			return 0;
 		}
 	}
 	
@@ -37,7 +37,7 @@ public class DiscountRate {
 			return productDiscountSilver;
 		}
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + memberType);
+			return 0;
 		}
 	}
 
