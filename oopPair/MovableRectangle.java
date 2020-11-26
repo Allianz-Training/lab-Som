@@ -16,24 +16,32 @@ public class MovableRectangle implements Movable{
 
 
 	public void moveUp() {
+		topleft.moveUp();
+		bottomRight.moveUp();
 		// TODO Auto-generated method stub
 		
 	}
 
 
 	public void moveDown() {
+		topleft.moveDown();
+		bottomRight.moveDown();
 		// TODO Auto-generated method stub
 		
 	}
 
 
 	public void moveLeft() {
+		topleft.moveLeft();
+		bottomRight.moveLeft();
 		// TODO Auto-generated method stub
 		
 	}
 
 
 	public void moveRight() {
+		topleft.moveRight();
+		bottomRight.moveRight();
 		// TODO Auto-generated method stub
 		
 	}

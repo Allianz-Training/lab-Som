@@ -24,6 +24,7 @@ public class MovablePoint implements Movable {
 
 
 	public void moveUp() {
+		y+=ySpeed;
 		// TODO Auto-generated method stub
 		
 	}
@@ -32,6 +33,7 @@ public class MovablePoint implements Movable {
 
 
 	public void moveDown() {
+		y-=ySpeed;
 		// TODO Auto-generated method stub
 		
 	}
@@ -40,6 +42,7 @@ public class MovablePoint implements Movable {
 
 
 	public void moveLeft() {
+		x-=xSpeed;
 		// TODO Auto-generated method stub
 		
 	}
@@ -47,6 +50,7 @@ public class MovablePoint implements Movable {
 
 
 	public void moveRight() {
+		x+=xSpeed;
 		// TODO Auto-generated method stub
 		
 	}

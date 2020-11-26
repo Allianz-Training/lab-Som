@@ -11,21 +11,25 @@ public class MovableCircle implements Movable{
 	
 	
 	public void moveUp() {
+		center.moveUp();
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void moveDown() {
+		center.moveDown();
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void moveLeft() {
+		center.moveLeft();
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void moveRight() {
+		center.moveRight();
 		// TODO Auto-generated method stub
 		
 	}
