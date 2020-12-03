@@ -1,0 +1,23 @@
+-- SELECT sname,age from Sailors ;
+
+-- SELECT DISTINCT Sailors.sname from Sailors INNER JOIN Reserves ON Sailors.sid=Reserves.sid WHERE Reserves.bid ==103;
+
+-- SELECT Reserves.sid from Reserves Inner join Boats on Reserves.bid=Boats.bid WHERE Boats.Color="Red";
+-- SELECT distinct Reserves.sid from Reserves Inner join Boats on Reserves.bid=Boats.bid WHERE Boats.Color="Red";
+
+-- select Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Boats.Color="Red";
+
+-- select boats.Color from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Sailors.sname="Lubber";
+
+-- select DISTINCT Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Sailors.sid=Reserves.sid;
+
+-- select DISTINCT Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Sailors.sid=Reserves.sid;
+
+-- select Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Boats.Color="Red" or Boats.Color="Green";
+
+-- select Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Boats.Color="Red" intersect select Sailors.sname from Sailors inner join Reserves on Sailors.sid=Reserves.sid inner JOIN Boats on Reserves.bid=boats.bid where Boats.Color="Green";
+
+-- select Sailors.sname from Sailors,Boats,Reserves WHERE Reserves.bid=Boats.bid AND Reserves.sid=Sailors.sid and Boats.Color="Red" union select Sailors.sname from Sailors,Boats,Reserves WHERE Reserves.bid=Boats.bid AND Reserves.sid=Sailors.sid and Boats.Color="Green"
+
+select distinct s.sname from Sailors s,Boats b1,Reserves r1,Boats b2,Reserves r2 WHERE r1.bid=b1.bid AND s.sid=r1.sid AND r2.bid=b2.bid AND s.sid=r2.sid and b1.Color="Red" and b2.Color="Green" ;
+
