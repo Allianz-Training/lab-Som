@@ -1,0 +1,27 @@
+<form [formGroup]="form">
+    <h3>Add New Post</h3>
+    <div>
+        UserId: <input formControlName="userId">
+    </div>
+    <div>
+        Title: <input formControlName="title">
+    </div>
+    <div>
+        Body: <input formControlName="body">
+    </div>
+    <button (click)="addPost()">Add</button>
+</form>
+<div *ngFor="let user of users" style='border:1px solid gray;margin:4px;padding: 4px;'>
+    <h4>
+        User Id : #{{user.userId}}
+    </h4>
+    <span>
+        Id : {{user.id}}
+    </span>
+    <span>
+        Title : {{user.title}}
+    </span>
+    <span>
+        Body : {{user.body}}
+    </span>
+</div>
