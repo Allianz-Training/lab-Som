@@ -1,0 +1,37 @@
+<form [formGroup]="form" class="container form-css">
+    <div>
+        Base Money
+        <span style='color:red;' *ngIf="form.get('base').errors?.required">
+            *
+        </span>
+    </div>
+    <div>
+        <input formControlName='base' placeholder="Your answer" class='form-control'>
+    </div>
+    <div>
+        Money from base
+        <span style='color:red;' *ngIf="form.get('moneyBase').errors?.required">
+            *
+        </span>
+    </div>
+    <div>
+        <input formControlName='moneyBase' placeholder="Your answer" class='form-control'>
+    </div>
+    <div>
+        Currency
+        <span style='color:red;' *ngIf="form.get('currency').errors?.required">
+            *
+        </span>
+    </div>
+    <div>
+        <input formControlName='currency' placeholder="Your answer" class='form-control'>
+    </div>
+    <br>
+    <div>
+        Convert result : {{convertMoney}}
+    </div>
+    <br>
+
+    <button (click)=getFromBase() [disabled]="form.invalid" class="btn btn-primary">CONVERT</button>
+</form>
+

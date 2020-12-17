@@ -1,0 +1,41 @@
+<form [formGroup]="form" class="container form-css">
+    <div>
+        Name
+        <span style='color:red;' *ngIf="form.get('name').errors?.required">
+            *
+        </span>
+    </div>
+    <div>
+        <input formControlName='name' placeholder="Your answer" class='form-control'>
+    </div>
+    <div>
+        Email
+        <span style='color:red;' *ngIf="form.get('email').errors?.required">
+            *
+        </span>
+        <span style='color:red;' *ngIf="form.get('email').errors?.email">
+            Please fill correct email
+        </span>
+    </div>
+    <div>
+        <input formControlName='email' placeholder="Your answer" class='form-control'>
+    </div>
+    <div>
+        Postal Address
+        <span style='color:red;' *ngIf="form.get('postalAddress').errors?.required">
+            *
+        </span>
+    </div>
+    <div>
+        <input formControlName='postalAddress' placeholder="Your answer" class='form-control'>
+    </div>
+    <div>
+        Comment
+    </div>
+    <div>
+        <input formControlName='comment' placeholder="Your answer" class='form-control'>
+    </div>
+    <br>
+
+    <button (click)=submit() [disabled]="form.invalid" class="btn btn-primary">SUBMIT</button>
+</form>
