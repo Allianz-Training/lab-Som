@@ -1,0 +1,31 @@
+<app-task
+    *ngFor="let task of tasks"
+    [task]="task"
+    (OnSelected)="deleteTask($event)"
+    (OnClick)="clickedTask($event)"><br>
+</app-task>
+<div class='border-todolist'>
+    <div>
+        Add Task
+    </div>
+    <div>
+        Name : 
+        <input [(ngModel)]="nameTask">
+    </div>
+    <br>
+    <div>
+        Description : 
+        <input [(ngModel)]="descriptionTask">
+    </div>
+    <div>
+        <button (click)="addTask(nameTask,descriptionTask)"> Add</button>
+    </div>
+</div>
+<div *ngIf="taskClicked" class='border-todolist'>
+    <p>
+        Task : {{taskClicked.name}}
+    </p>
+    <p>
+        Description : {{taskClicked.desc}}
+    </p>
+</div>

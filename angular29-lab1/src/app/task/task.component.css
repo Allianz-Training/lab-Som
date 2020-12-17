@@ -1,0 +1,25 @@
+.task{
+    border:solid 1px gray;
+    margin: 5px 6rem 0 6rem;
+    
+    
+}
+.task:hover{
+    background-color: turquoise;
+}
+.tab{
+    width: 100%;
+    display: inline-block;
+    padding-left:10px;
+    
+}
+button{
+    border-radius: 5%;
+    background-color: #007bff;
+    color:white;
+    float: right;
+    
+}
+.selected{
+    background: lightgrey;
+}

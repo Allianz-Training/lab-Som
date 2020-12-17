@@ -1,0 +1,6 @@
+<div class="task" (click)="clicked()" [class.selected]="isSelected">
+    <div class="tab">
+        {{task.name}}
+        <button style="float:right;" (click)="select()">Delete</button>
+    </div>
+</div>

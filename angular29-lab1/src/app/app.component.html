@@ -1,0 +1,27 @@
+<div id="nav">
+  <ul> 
+    <li><a [routerLink]="['/']" >Home</a></li>
+    <li><a [routerLink]="['/todolist']" >Todo list</a></li>
+    <li><a [routerLink]="['/productlist']" >Product</a></li>
+  </ul>
+</div>
+
+
+<br>
+<router-outlet></router-outlet>
+<!-- <div>
+  <app-home [title]="'home component 1'"></app-home>
+</div>
+
+<div>
+  <h2>Product List</h2>
+  <app-product-list #productList></app-product-list>
+</div>
+
+<div>
+  <h2>Homework1</h2>
+  <app-to-do-list #todoList></app-to-do-list>
+</div>
+
+<app-navbar></app-navbar>
+<app-main-content></app-main-content> -->
