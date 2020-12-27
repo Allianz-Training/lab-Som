@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "outDir": "out",
+      "target": "es6",
+      "module": "commonjs",
+      "allowJs": true,
+    }
+   }
+   
